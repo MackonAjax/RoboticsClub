@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*.onrender.com', 'roboticsclubbackend.onrender.com', '127.0.0.1']
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Application definition
 
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
 
     'ClubApp',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
